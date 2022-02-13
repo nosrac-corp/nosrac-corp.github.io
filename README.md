@@ -1,4 +1,4 @@
-## Nosrac Technologies Github Pages
+# Nosrac Technologies Github Pages
 
 This is the primary website for Nosrac Technologies.
 
