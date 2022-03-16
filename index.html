@@ -39,22 +39,34 @@
     <!-- Custom styles for this template -->
     <link href="./style/index.css" rel="stylesheet" />
     <link href="./style/site.css" rel="stylesheet" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-
   </head>
   <body>
     <header class="site-header sticky-top py-1">
       <nav
-        class="container d-flex flex-column flex-md-row justify-content-between">
+        class="container d-flex flex-column flex-md-row justify-content-between"
+      >
         <a class="navbar-brand" href="#" aria-label="Logo">
-            <img src="assets/Symbol_Logo.png" alt="Nosrac Logo" width="24" height="24" style="border-radius:15%" class="d-block mx-auto" role="img" viewBox="0 0 24 24">
+          <img
+            src="assets/symbol_logo_light.svg"
+            alt="Nosrac Logo"
+            width="24"
+            height="24"
+            style="border-radius: 15%"
+            class="d-block mx-auto"
+            role="img"
+            viewBox="0 0 24 24"
+            id="light-icon"
+          />
         </a>
-        <a class="py-2 d-none d-md-inline-block" href="pages/nosracid.html">NosracID</a>
-        <a class="py-2 d-none d-md-inline-block" href="pages/about.html">About</a>
-        <a class="py-2 d-none d-md-inline-block" href="mailto:nosrac@nosrac.io">Contact</a>
+        <a class="py-2 d-none d-md-inline-block" href="pages/nosracid.html"
+          >NosracID</a
+        >
+        <a class="py-2 d-none d-md-inline-block" href="pages/about.html"
+          >About</a
+        >
+        <a class="py-2 d-none d-md-inline-block" href="mailto:nosrac@nosrac.io"
+          >Contact</a
+        >
       </nav>
     </header>
 
@@ -93,7 +105,12 @@
           <div class="my-3 py-3">
             <h2 class="display-5">NosracID</h2>
             <p class="lead">A digital identity for everyone.</p>
-            <a class="btn btn-outline-secondary" style="color:white" href="pages/nosracid.html">Learn more</a>
+            <a
+              class="btn btn-outline-secondary"
+              style="color: white"
+              href="pages/nosracid.html"
+              >Learn more</a
+            >
           </div>
           <div
             class="bg-light shadow-sm mx-auto"
@@ -111,8 +128,9 @@
             text-center
             overflow-hidden
           "
-        >
-        <!-- EXAMPLE OF SECONDARY PRODUCT
+        ></div>
+      </div>
+      <!-- EXAMPLE OF SECONDARY PRODUCT
           <div class="my-3 p-3">
             <h2 class="display-5">Climate Track</h2>
             <p class="lead">Climate Change Tracker</p>
@@ -125,38 +143,53 @@
         </div>
       </div>
       -->
-    <footer class="container py-5">
-      <div class="row">
-        <div class="col-12 col-md">
-          <a class="py-2" href="#" aria-label="Logo">
-              <img src="assets/Symbol_Logo.png" alt="Nosrac Logo" width="24" height="24" style="border-radius:15%">
-          </a>
-          <small class="d-block mb-3 text-muted"
-            >&copy; Nosrac Technologies 2022</small
-          >
+      <footer class="container py-5">
+        <div class="row">
+          <div class="col-12 col-md">
+            <a class="py-2" href="#" aria-label="Logo">
+              <img
+                src="assets/symbol_logo_dark.svg"
+                alt="Nosrac Logo"
+                width="24"
+                height="24"
+              />
+            </a>
+            <small class="d-block mb-3 text-muted"
+              >&copy; Nosrac Technologies 2022</small
+            >
+          </div>
+          <div class="col-6 col-md">
+            <h5>Projects</h5>
+            <ul class="list-unstyled text-small">
+              <li>
+                <a class="link-secondary" href="pages/nosracid.html"
+                  >NosracID</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary" href="#">NosracID Docs</a></li>
+              <li>
+                <a class="link-secondary" href="https://github.com/nosrac-tech"
+                  >Github</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li>
+                <a class="link-secondary" href="./pages/about.html">Team</a>
+              </li>
+              <li><a class="link-secondary" href="#">Privacy</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="col-6 col-md">
-          <h5>Projects</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="link-secondary" href="pages/nosracid.html">NosracID</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>Resources</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="link-secondary" href="#">NosracID Docs</a></li>
-            <li><a class="link-secondary" href="https://github.com/nosrac-tech">Github</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5>About</h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="link-secondary" href="./pages/about.html">Team</a></li>
-            <li><a class="link-secondary" href="#">Privacy</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-
+      </footer>
+    </main>
   </body>
 </html>
