@@ -39,7 +39,7 @@ ul.nav a:hover {
 }
 
 footer {
-  position: fixed;
+  position: flex;
   height: 50px;
   bottom: 0px;
   left: 0px;
