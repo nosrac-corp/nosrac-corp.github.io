@@ -4,192 +4,88 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
-    <meta name="author" content="Nosrac Technologies" />
+    <meta name="author" content="Nosrac Technologies, Carson Woods" />
+    <title>Nosrac | An Infrastructure Company</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="canonical" href="https://nosrac.io/" />
 
-    <title>Nosrac Technologies</title>
-
-    <link rel="canonical" href="https://nosrac.io" />
-
-    <link rel="shortcut icon" href="./assets/favicon.ico" />
-
-    <!-- Bootstrap core CSS -->
+    <!-- Add Red Hat Mono Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap"
       rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    />
+
+    <!-- Bootstrap Loading -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
     <!-- Custom styles for this template -->
-    <link href="./style/index.css" rel="stylesheet" />
-    <link href="./style/site.css" rel="stylesheet" />
+    <link href="style/site.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="site-header sticky-top py-1">
-      <nav
-        class="container d-flex flex-column flex-md-row justify-content-between"
-      >
-        <a class="navbar-brand" href="#" aria-label="Logo">
-          <img
-            src="assets/symbol_logo_light.svg"
-            alt="Nosrac Logo"
-            width="24"
-            height="24"
-            style="border-radius: 15%"
-            class="d-block mx-auto"
-            role="img"
-            viewBox="0 0 24 24"
-            id="light-icon"
-          />
-        </a>
-        <a class="py-2 d-none d-md-inline-block" href="pages/nosracid.html"
-          >NosracID</a
-        >
-        <a class="py-2 d-none d-md-inline-block" href="pages/about.html"
-          >About</a
-        >
-        <a class="py-2 d-none d-md-inline-block" href="mailto:nosrac@nosrac.io"
-          >Contact</a
-        >
-      </nav>
-    </header>
-
     <main>
-      <div
-        class="
-          position-relative
-          overflow-hidden
-          p-3 p-md-5
-          m-md-3
-          text-center
-          bg-light
-        "
-      >
-        <div class="col-md-5 p-lg-5 mx-auto my-5">
-          <h1 class="display-4 fw-normal">Nosrac Technologies</h1>
-          <p class="lead fw-normal">
-            Working on building sustainable solutions to modern problems.
-          </p>
+      <header id="navbar" class="p-3">
+        <div class="container">
+          <div
+            class="
+              d-flex
+              flex-wrap
+              align-items-center
+              justify-content-center justify-content-lg-start
+            "
+          >
+            <ul
+              class="
+                nav
+                col-12 col-lg-auto
+                me-lg-auto
+                mb-2
+                justify-content-center
+                mb-md-0
+              "
+            >
+              <li>
+                <a id="nosrac" href="index.html" class="nav-link px-2"
+                  >Nosrac</a
+                >
+              </li>
+              <li>
+                <a href="pages/hermetic.html" class="nav-link px-2">Hermetic</a>
+              </li>
+              <li><a href="pages/faq.html" class="nav-link px-2">FAQs</a></li>
+              <li>
+                <a href="./pages/about.html" class="nav-link px-2">About</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </header>
 
-      <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        <div
-          class="
-            bg-dark
-            me-md-3
-            pt-3
-            px-3
-            pt-md-5
-            px-md-5
-            text-center text-white
-            overflow-hidden
-          "
-        >
-          <div class="my-3 py-3">
-            <h2 class="display-5">NosracID</h2>
-            <p class="lead">A digital identity for everyone.</p>
-            <a
-              class="btn btn-outline-secondary"
-              style="color: white"
-              href="pages/nosracid.html"
-              >Learn more</a
-            >
-          </div>
-          <div
-            class="bg-light shadow-sm mx-auto"
-            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
-          ></div>
-        </div>
-        <div
-          class="
-            bg-light
-            me-md-3
-            pt-3
-            px-3
-            pt-md-5
-            px-md-5
-            text-center
-            overflow-hidden
-          "
-        ></div>
-      </div>
-      <!-- EXAMPLE OF SECONDARY PRODUCT
-          <div class="my-3 p-3">
-            <h2 class="display-5">Climate Track</h2>
-            <p class="lead">Climate Change Tracker</p>
-            <a class="btn btn-outline-secondary">Coming soon</a>
-          </div>
-          <div
-            class="bg-dark shadow-sm mx-auto"
-            style="width: 80%; height: 300px; border-radius: 21px 21px 0 0"
-          ></div>
+      <div class="px-4 py-5 my-5 text-center">
+        <img
+          class="d-block mx-auto mb-4"
+          src="./assets/symbol_logo_dark.svg"
+          alt=""
+          width="72"
+          height="57"
+        />
+        <h1 id="nosrac" class="display-5 fw-bold">Nosrac</h1>
+        <div class="col-lg-6 mx-auto">
+          <h4>An infrastructure company.</h4>
+          <p>
+            Currently building Hermetic, a new way to manage software on your
+            machines.
+          </p>
+          <p></p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"></div>
         </div>
       </div>
-      -->
-      <footer class="container py-5">
-        <div class="row">
-          <div class="col-12 col-md">
-            <a class="py-2" href="#" aria-label="Logo">
-              <img
-                src="assets/symbol_logo_dark.svg"
-                alt="Nosrac Logo"
-                width="24"
-                height="24"
-              />
-            </a>
-            <small class="d-block mb-3 text-muted"
-              >&copy; Nosrac Technologies 2022</small
-            >
-          </div>
-          <div class="col-6 col-md">
-            <h5>Projects</h5>
-            <ul class="list-unstyled text-small">
-              <li>
-                <a class="link-secondary" href="pages/nosracid.html"
-                  >NosracID</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Resources</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="link-secondary" href="#">NosracID Docs</a></li>
-              <li>
-                <a class="link-secondary" href="https://github.com/nosrac-tech"
-                  >Github</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>About</h5>
-            <ul class="list-unstyled text-small">
-              <li>
-                <a class="link-secondary" href="./pages/about.html">Team</a>
-              </li>
-              <li><a class="link-secondary" href="#">Privacy</a></li>
-            </ul>
-          </div>
-        </div>
-      </footer>
     </main>
   </body>
 </html>
