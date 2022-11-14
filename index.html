@@ -28,6 +28,7 @@
     <!-- Custom styles for this template -->
     <link href="style/site.css" rel="stylesheet" />
   </head>
+
   <body>
     <main>
       <header id="navbar" class="p-3">
@@ -56,9 +57,8 @@
                 >
               </li>
               <li>
-                <a href="pages/hermetic.html" class="nav-link px-2">Hermetic</a>
+                <a href="#" class="nav-link px-2">Hermetic</a>
               </li>
-              <li><a href="pages/faq.html" class="nav-link px-2">FAQs</a></li>
               <li>
                 <a href="./pages/about.html" class="nav-link px-2">About</a>
               </li>
@@ -70,12 +70,14 @@
       <div class="px-4 py-5 my-5 text-center">
         <img
           class="d-block mx-auto mb-4"
-          src="./assets/symbol_logo_dark.svg"
+          src="./assets/symbol_logo_light.svg"
           alt=""
           width="72"
           height="57"
         />
-        <h1 id="nosrac" class="display-5 fw-bold">Nosrac</h1>
+        <h1 id="nosrac" class="display-5 fw-bold">
+          Nosrac<span id="blink">_</span>
+        </h1>
         <div class="col-lg-6 mx-auto">
           <h4>An infrastructure company.</h4>
           <p>
@@ -87,5 +89,17 @@
         </div>
       </div>
     </main>
+
+    <footer>
+      <p>&copy; <span id="nosrac">Nosrac</span> 2022</p>
+    </footer>
+
+    <script>
+      var blink_speed = 1000; // every 1000 == 1 second, adjust to suit
+      var t = setInterval(function () {
+        var ele = document.getElementById("blink");
+        ele.style.visibility = ele.style.visibility == "hidden" ? "" : "hidden";
+      }, blink_speed);
+    </script>
   </body>
 </html>
