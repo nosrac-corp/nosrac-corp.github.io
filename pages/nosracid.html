@@ -62,7 +62,12 @@
       <script src="../scripts/steps.js"></script>
 
       <footer class="container">
-        <p>&copy; Nosrac Technologies 2022</p>
+        <p>
+          &copy; Nosrac Technologies
+          <script>
+            document.write(/\d{4}/.exec(Date())[0]);
+          </script>
+        </p>
       </footer>
     </main>
   </body>
